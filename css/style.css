@@ -1,0 +1,126 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  ::after,
+  ::before {
+    box-sizing: inherit;
+  }
+
+.site {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: justify;
+    background-color: hsl(60, 78%, 96%);
+    font-family: "Poppins", sans-serif;
+    line-height: 1.7;
+}
+
+.navigation__unorderedList {
+    list-style-type: none;
+}
+
+.navigation__listElement {
+    border: 2px solid hsl(0, 0%, 50%);
+    padding: 5px;
+    border-radius: 20%;
+    text-align: center;
+    max-width: 250px;
+    font-size: small;
+    margin: 10px auto;
+}
+
+.header {
+    text-align: center;
+}
+
+.mainHeader {
+    max-width: 1000px;
+    margin: 10px 50px 50px 50px;
+    border-radius: 10px;
+    box-shadow: inset 10px -10px 53px -31px #AD9754;
+}
+
+.table__cell {
+    border: 1px solid hsl(0, 0%, 0%);
+    padding: 8px;
+    text-align: center;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #ececeb;
+    margin: 0 auto;
+}
+.table__caption {
+    caption-side: top;
+    text-align: right;
+    font-style: italic;
+}
+.table__header {
+    background-color: hsl(0, 4%, 70%);
+}
+
+.table__row:nth-child(even) {
+    background-color: hsl(0, 0%, 82%);
+}
+
+.table__row:hover {
+    background-color: #f0f8ff;
+}
+
+.table__photo {
+    padding-top: 10px;
+}
+
+.tableResponsive {
+    overflow-x: auto;
+}
+
+.navigation__link {
+    color: hsl(0, 22%, 59%);
+    text-decoration: none;
+}
+
+.navigation__link:hover {
+    color: hsl(0, 59%, 41%);
+    border-bottom: 1px solid;
+    outline: none;
+}
+
+.navigation__link:active {
+    color: hsl(0, 100%, 50%);
+}
+
+.section__link {
+    color: hsl(0, 6%, 45%);
+    text-decoration: none;
+}
+
+.section__link:hover {
+    color: hsl(0, 59%, 41%);
+    border-bottom: 1px solid;
+    outline: none;
+}
+
+.section__link:active {
+    color: hsl(0, 100%, 50%);
+}
+
+.footer {
+    max-width: 1000px;
+    margin: 50px 50px 0px 50px;
+    border-radius: 10px;
+    box-shadow: inset 10px -10px 53px -31px #AD9754;
+    text-align: center;
+    font-size: small;
+}
+
+.yellowTheme{
+    background: rgb(242, 250, 210);
+}
+.deleteNavigation{
+    display: none;
+}
