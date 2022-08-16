@@ -1,157 +1,247 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moje podróże</title>
-    <meta property="og:image" content="photo/og photo.png">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta property="og:image" content="photo/og photo.png" />
+    <link rel="icon" href="photo/icon.jpg">
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="js/script.js"></script>
-</head>
+  </head>
 
-<body class="site">
+  <body class="site">
     <header>
-        <h1 class="mainHeader header">Moje podróże</h1>
+      <h1 class="mainHeader header">Moje podróże</h1>
     </header>
-    <button class="js-button">Włącz <span class="js-themeName">żółty</span> motyw</button>
-    <button class="js-buttonRemove"> <span class="js-removeNavigation">Usuń</span> nawigację</button>
+    <button class="js-button">
+      Włącz <span class="js-themeName">żółty</span> motyw
+    </button>
+    <button class="js-buttonRemove">
+      <span class="js-removeNavigation">Usuń</span> nawigację
+    </button>
 
     <nav class="navigation">
-        <ul class="navigation__unorderedList">
-            <li class="navigation__listElement"><a class="navigation__link" href="#tabela-z-podróżami">Zestawienie
-                    podróży</a></li>
-            <li class="navigation__listElement"><a class="navigation__link" href="#Burj-Khalifa">Burj Khalifa</a></li>
-            <li class="navigation__listElement"><a class="navigation__link" href="#Cerkiew-św-Andrzeja">Cerkiew św.
-                    Andrzeja</a></li>
-            <li class="navigation__listElement"><a class="navigation__link" href="#Angkor-Wat">Angkor Wat</a></li>
-            <li class="navigation__listElement"><a class="navigation__link" href="#Gardens-by-the-bay">Gardens by the
-                    Bay</a></li>
-            <li class="navigation__listElement"><a class="navigation__link" href="#Arthur's-seat">Arthur's Seat</a></li>
-        </ul>
+      <ul class="navigation__unorderedList">
+        <li class="navigation__listElement">
+          <a class="navigation__link" href="#tabela-z-podróżami"
+            >Zestawienie podróży</a
+          >
+        </li>
+        <li class="navigation__listElement">
+          <a class="navigation__link" href="#Burj-Khalifa">Burj Khalifa</a>
+        </li>
+        <li class="navigation__listElement">
+          <a class="navigation__link" href="#Cerkiew-św-Andrzeja"
+            >Cerkiew św. Andrzeja</a
+          >
+        </li>
+        <li class="navigation__listElement">
+          <a class="navigation__link" href="#Angkor-Wat">Angkor Wat</a>
+        </li>
+        <li class="navigation__listElement">
+          <a class="navigation__link" href="#Gardens-by-the-bay"
+            >Gardens by the Bay</a
+          >
+        </li>
+        <li class="navigation__listElement">
+          <a class="navigation__link" href="#Arthur's-seat">Arthur's Seat</a>
+        </li>
+      </ul>
     </nav>
 
-    <p>Cześć! <br>Chciałabym się podzielić z Tobą wspomnieniami z miejsc, które udało mi się odwiedzić. Do zestawienia
-        wybrałam tylko te najciekawsze. Jeżeli chciałabyś/chciałbyś dowiedzieć się jeszcze więcej na temat mojego
-        podróżowania - napisz do mnie <a href="mailto:agata@szwerbel.pl">agata@szwerbel.pl</a> lub zadzwoń <a
-            href="+48123456789">123 456 789</a> z dowolnym pytaniem.</p>
+    <p>
+      Cześć! <br />Chciałabym się podzielić z Tobą wspomnieniami z miejsc, które
+      udało mi się odwiedzić. Do zestawienia wybrałam tylko te najciekawsze.
+      Jeżeli chciałabyś/chciałbyś dowiedzieć się jeszcze więcej na temat mojego
+      podróżowania - napisz do mnie
+      <a href="mailto:agata@szwerbel.pl">agata@szwerbel.pl</a> lub zadzwoń
+      <a href="+48123456789">123 456 789</a> z dowolnym pytaniem.
+    </p>
     <main>
-        <h2 class="header" id="tabela-z-podróżami">Zestawienie podróży </h2>
-        <div class="tableResponsive">
-            <table class="table">
-                <caption class="table__caption">Moje ulubione miejsca na świecie</caption>
-                <tr class="table__row">
-                    <th scope="col" class="table__cell table__header">Państwo</th>
-                    <th scope="col" class="table__cell table__header">Lotnisko docelowe</th>
-                    <th scope="col" class="table__cell table__header">Ulubione miejsce</th>
-                    <th scope="col" class="table__cell table__header">Rok podróży</th>
-                    <th scope="col" class="table__cell table__header">Zdjęcie miejsca</th>
-                </tr>
+      <h2 class="header" id="tabela-z-podróżami">Zestawienie podróży</h2>
+      <div class="tableResponsive">
+        <table class="table">
+          <caption class="table__caption">
+            Moje ulubione miejsca na świecie
+          </caption>
+          <tr class="table__row">
+            <th scope="col" class="table__cell table__header">Państwo</th>
+            <th scope="col" class="table__cell table__header">
+              Lotnisko docelowe
+            </th>
+            <th scope="col" class="table__cell table__header">
+              Ulubione miejsce
+            </th>
+            <th scope="col" class="table__cell table__header">Rok podróży</th>
+            <th scope="col" class="table__cell table__header">
+              Zdjęcie miejsca
+            </th>
+          </tr>
 
-                <tr class="table__row">
-                    <td class="table__cell">ZEA</td>
-                    <td class="table__cell">Dubaj DXB</td>
-                    <td class="table__cell">Burj Khalifa</td>
-                    <td class="table__cell" rowspan="2">2018</td>
-                    <td class="table__cell table__photo"><img width="150" height="100"
-                            src="https://imgur.com/uDy0CbD.jpeg" alt="Burj Khalifa"> </td>
-                </tr>
-                <tr class="table__row">
-                    <td class="table__cell">Ukraina</td>
-                    <td class="table__cell">Kijów IEV</td>
-                    <td class="table__cell">Cerkiew św. Andrzeja</td>
+          <tr class="table__row">
+            <td class="table__cell">ZEA</td>
+            <td class="table__cell">Dubaj DXB</td>
+            <td class="table__cell">Burj Khalifa</td>
+            <td class="table__cell" rowspan="2">2018</td>
+            <td class="table__cell table__photo">
+              <img
+                width="150"
+                height="100"
+                src="https://imgur.com/uDy0CbD.jpeg"
+                alt="Burj Khalifa"
+              />
+            </td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__cell">Ukraina</td>
+            <td class="table__cell">Kijów IEV</td>
+            <td class="table__cell">Cerkiew św. Andrzeja</td>
 
-                    <td class="table__cell table__photo"><img width="150" src="https://imgur.com/IfuCSDf.jpeg"
-                            alt="Cerkiew św. Andrzeja"> </td>
-                </tr>
-                <tr class="table__row">
-                    <td class="table__cell">Kambodża</td>
-                    <td class="table__cell">Siem Reap REP</td> 
-                    <td class="table__cell">Angkor Wat</td>
-                    <td class="table__cell" rowspan="2">2019</td>
-                    <td class="table__cell table__photo"><img width="150"src="https://i.ibb.co/bdgqG2x/z10525594-IH-Azja-Angkor-Wat-Kambodza-Swiatynia-hinduistyczne.jpg"
-                            alt="Angkor Wat"> </td>
-                </tr>
-                <tr class="table__row">
-                    <td class="table__cell">Singapur</td>
-                    <td class="table__cell">Singapur SIN</td>
-                    <td class="table__cell">Gardens by the Bay</td>
-                    <td class="table__cell table__photo"><img width="150" src="https://i.ibb.co/Sd5VwL4/Gardens-by-the-Bay-800x445.jpg"
-                            alt="Gardens by the Bay"></td>
-                </tr>
-                <tr class="table__row">
-                    <td class="table__cell">Wielka Brytania</td>
-                    <td class="table__cell">Edynburg EDI</td>
-                    <td class="table__cell">Arthur's Seat</td>
-                    <td class="table__cell">2020</td>
-                    <td class="table__cell table__photo"><img width="150"
-                            src="https://i.ibb.co/9n1HVxg/DSC01318.jpg"
-                            alt="Arthur's Seat"></td>
-                </tr>
-            </table>
-        </div>
+            <td class="table__cell table__photo">
+              <img
+                width="150"
+                src="https://imgur.com/IfuCSDf.jpeg"
+                alt="Cerkiew św. Andrzeja"
+              />
+            </td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__cell">Kambodża</td>
+            <td class="table__cell">Siem Reap REP</td>
+            <td class="table__cell">Angkor Wat</td>
+            <td class="table__cell" rowspan="2">2019</td>
+            <td class="table__cell table__photo">
+              <img
+                width="150"
+                src="https://i.ibb.co/bdgqG2x/z10525594-IH-Azja-Angkor-Wat-Kambodza-Swiatynia-hinduistyczne.jpg"
+                alt="Angkor Wat"
+              />
+            </td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__cell">Singapur</td>
+            <td class="table__cell">Singapur SIN</td>
+            <td class="table__cell">Gardens by the Bay</td>
+            <td class="table__cell table__photo">
+              <img
+                width="150"
+                src="https://i.ibb.co/Sd5VwL4/Gardens-by-the-Bay-800x445.jpg"
+                alt="Gardens by the Bay"
+              />
+            </td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__cell">Wielka Brytania</td>
+            <td class="table__cell">Edynburg EDI</td>
+            <td class="table__cell">Arthur's Seat</td>
+            <td class="table__cell">2020</td>
+            <td class="table__cell table__photo">
+              <img
+                width="150"
+                src="https://i.ibb.co/9n1HVxg/DSC01318.jpg"
+                alt="Arthur's Seat"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
 
-        <section class="section" id="Burj-Khalifa">
-            <h3 class="section__header">Burj Khalifa</h3>
-            Burj Khalifa to najwyższy budynek świata oraz symbol Dubaju, największego miasta położonego w Zjednoczonych
-            Emiratach Arabskich. Jego całkowita wysokość to 828 metrów. Jest
-            położony obok słynnego centrum handlowego Dubai Mall. Panoramę miasta można podziwiać z dwóch tarasów. Widok
-            zapiera dech zarówno w dzień jak i w nocy. <br>Zachęcam do odwiedzenia strony <a class="section__link"
-                target="_blank" rel="noreferrer noopener" href="https://pl.wikipedia.org/wiki/Burd%C5%BC_Chalifa"
-                title="Artykuł do Wikipedii o Burj Kahlifa">o tym słynnym budynku
-                (link otworzy się w nowej karcie)</a>. Znajdziesz tam więcej szczegółowych informacji.
-        </section>
-        <section class="section" id="Cerkiew-św-Andrzeja">
-            <h3 class="section__header">Cerkiew św. Andrzeja </h3>
-            Cerkiew św. Andrzeja to barkowa cerkiew ukraińska, która powstała w XVIII wieku z inicjatywy carycy
-            Elżbiety.
-            Znajduje się na wzgórzu, które według legendy miało zostać wskazane przez samego św. Andrzeja jako miejsce
-            gdzie
-            za sprawą bożą powstanie miasto i wspaniała świątynia.<br>Zachęcam do odwiedzenia strony <a
-                class="section__link" target="_blank" rel="noreferrer noopener"
-                href="https://pl.wikipedia.org/wiki/Cerkiew_%C5%9Bw._Andrzeja_w_Kijowie"
-                title="Artykuł do Wikipedii o cerkiwi świętego Andrzeja">o tej świątyni
-                (link otworzy się w nowej karcie)</a>. Znajdziesz tam więcej szczegółowych informacji.
-        </section>
-        <section class="section" id="Angkor-Wat">
-            <h3 class="section__header">Angkor Wat</h3>
-            Angkor Wat to największy na świecie kompleks świątynny położony w okolicy miasta Siem Reap w Kambodży. Jest
-            symbolem Kambodży - znajduje się nawet na fladze tego państwa.<br>Zachęcam do odwiedzenia strony <a
-                class="section__link" target="_blank" rel="noreferrer noopener"
-                href="https://pl.wikipedia.org/wiki/Angkor_Wat" title="Artykuł do Wikipedii o Angkor Wat">o tej
-                świątyni
-                (link otworzy się w nowej karcie)</a>. Znajdziesz tam więcej szczegółowych informacji.
-        </section>
-        <section class="section" id="Gardens-by-the-bay">
-            <h3 class="section__header">Gardens by the Bay</h3>
-            Gardens by the Bay to blisko 100 hektarowy park miejski zaprojektowany przez wielu inżynierów i
-            archiktektów.
-            Jego charakterystycznym elementem są sztuczne drzewa, które na wysokości 22 metrów połączone są mostami
-            dostępnymi dla turystów. Wieczorem odbywa się tam pokaz świateł i muzyki, a z wysokości mostów można
-            podziwiać
-            panoramę tego niezwykłego państwa - miasta. <br>Zachęcam do odwiedzenia strony<a class="section__link"
-                target="_blank" rel="noreferrer noopener" href="http://latarkawplecaku.pl/singapur-gardens-by-the-bay/"
-                title="Artykuł do bloga, zawierający wiecej informacji i zdjęć obiektu Gardens by the Bay"> o tym parku
-                (link otworzy się w nowej karcie)</a>. Znajdziesz tam więcej szczegółowych informacji.
-        </section>
-        <section class="section" id="Arthur's-seat">
-            <h3 class="section__header">Arthur's Seat</h3>
-            Siodło Artura to najwyższy szczyt Parku Holyrood położonego w Edynburgu, w Szkocji. Legenda głosi, że sam
-            Król
-            Artur przyglądał się z tego wzgórza bitwie swojej armii z Piktami. Jest idealnym miejscem do podziwiania
-            panoramy miasta oraz do zrobienia uroczych zdjęć o każdej porze dnia. <br>Zachęcam do odwiedzenia strony<a
-                class="section__link" target="_blank" rel="noreferrer noopener"
-                href="https://pl.wikipedia.org/wiki/Arthur%E2%80%99s_Seat" title="Artykuł do Wikipedii o wzgórzu"> o tym
-                miejscu
-                (link otworzy się w nowej karcie)</a>. Znajdziesz tam więcej szczegółowych informacji.
-        </section>
+      <section class="section" id="Burj-Khalifa">
+        <h3 class="section__header">Burj Khalifa</h3>
+        Burj Khalifa to najwyższy budynek świata oraz symbol Dubaju,
+        największego miasta położonego w Zjednoczonych Emiratach Arabskich. Jego
+        całkowita wysokość to 828 metrów. Jest położony obok słynnego centrum
+        handlowego Dubai Mall. Panoramę miasta można podziwiać z dwóch tarasów.
+        Widok zapiera dech zarówno w dzień jak i w nocy. <br />Zachęcam do
+        odwiedzenia strony
+        <a
+          class="section__link"
+          target="_blank"
+          rel="noreferrer noopener"
+          href="https://pl.wikipedia.org/wiki/Burd%C5%BC_Chalifa"
+          title="Artykuł do Wikipedii o Burj Kahlifa"
+          >o tym słynnym budynku (link otworzy się w nowej karcie)</a
+        >. Znajdziesz tam więcej szczegółowych informacji.
+      </section>
+      <section class="section" id="Cerkiew-św-Andrzeja">
+        <h3 class="section__header">Cerkiew św. Andrzeja</h3>
+        Cerkiew św. Andrzeja to barkowa cerkiew ukraińska, która powstała w
+        XVIII wieku z inicjatywy carycy Elżbiety. Znajduje się na wzgórzu, które
+        według legendy miało zostać wskazane przez samego św. Andrzeja jako
+        miejsce gdzie za sprawą bożą powstanie miasto i wspaniała świątynia.<br />Zachęcam
+        do odwiedzenia strony
+        <a
+          class="section__link"
+          target="_blank"
+          rel="noreferrer noopener"
+          href="https://pl.wikipedia.org/wiki/Cerkiew_%C5%9Bw._Andrzeja_w_Kijowie"
+          title="Artykuł do Wikipedii o cerkiwi świętego Andrzeja"
+          >o tej świątyni (link otworzy się w nowej karcie)</a
+        >. Znajdziesz tam więcej szczegółowych informacji.
+      </section>
+      <section class="section" id="Angkor-Wat">
+        <h3 class="section__header">Angkor Wat</h3>
+        Angkor Wat to największy na świecie kompleks świątynny położony w
+        okolicy miasta Siem Reap w Kambodży. Jest symbolem Kambodży - znajduje
+        się nawet na fladze tego państwa.<br />Zachęcam do odwiedzenia strony
+        <a
+          class="section__link"
+          target="_blank"
+          rel="noreferrer noopener"
+          href="https://pl.wikipedia.org/wiki/Angkor_Wat"
+          title="Artykuł do Wikipedii o Angkor Wat"
+          >o tej świątyni (link otworzy się w nowej karcie)</a
+        >. Znajdziesz tam więcej szczegółowych informacji.
+      </section>
+      <section class="section" id="Gardens-by-the-bay">
+        <h3 class="section__header">Gardens by the Bay</h3>
+        Gardens by the Bay to blisko 100 hektarowy park miejski zaprojektowany
+        przez wielu inżynierów i archiktektów. Jego charakterystycznym elementem
+        są sztuczne drzewa, które na wysokości 22 metrów połączone są mostami
+        dostępnymi dla turystów. Wieczorem odbywa się tam pokaz świateł i
+        muzyki, a z wysokości mostów można podziwiać panoramę tego niezwykłego
+        państwa - miasta. <br />Zachęcam do odwiedzenia strony<a
+          class="section__link"
+          target="_blank"
+          rel="noreferrer noopener"
+          href="http://latarkawplecaku.pl/singapur-gardens-by-the-bay/"
+          title="Artykuł do bloga, zawierający wiecej informacji i zdjęć obiektu Gardens by the Bay"
+        >
+          o tym parku (link otworzy się w nowej karcie)</a
+        >. Znajdziesz tam więcej szczegółowych informacji.
+      </section>
+      <section class="section" id="Arthur's-seat">
+        <h3 class="section__header">Arthur's Seat</h3>
+        Siodło Artura to najwyższy szczyt Parku Holyrood położonego w Edynburgu,
+        w Szkocji. Legenda głosi, że sam Król Artur przyglądał się z tego
+        wzgórza bitwie swojej armii z Piktami. Jest idealnym miejscem do
+        podziwiania panoramy miasta oraz do zrobienia uroczych zdjęć o każdej
+        porze dnia. <br />Zachęcam do odwiedzenia strony<a
+          class="section__link"
+          target="_blank"
+          rel="noreferrer noopener"
+          href="https://pl.wikipedia.org/wiki/Arthur%E2%80%99s_Seat"
+          title="Artykuł do Wikipedii o wzgórzu"
+        >
+          o tym miejscu (link otworzy się w nowej karcie)</a
+        >. Znajdziesz tam więcej szczegółowych informacji.
+      </section>
     </main>
-    <footer class="footer">Copyright 2022 by Agata Szwerbel - wszystkie prawa zastrzeżone</footer>
-</body>
-
+    <footer class="footer">
+      Copyright 2022 by Agata Szwerbel - wszystkie prawa zastrzeżone
+    </footer>
+  </body>
 </html>
